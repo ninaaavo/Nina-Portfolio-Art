@@ -16,7 +16,7 @@ export default function Model3D() {
           </a>
         </div>
         <div className="container-iframe">
-          <img src="/final-imgs/robot.png" alt="a 3d model of a robot" />
+          <img src={import.meta.env.BASE_URL + "final-imgs/robot.png"} alt="a 3d model of a robot" />
         </div>
       </section>
 
@@ -28,7 +28,7 @@ export default function Model3D() {
           </a>
         </div>
         <div className="container-iframe">
-          <img src="/final-imgs/armor.jpg" alt="a 3d armor" />
+          <img src={import.meta.env.BASE_URL + "final-imgs/armor.jpg"} alt="a 3d armor" />
         </div>
       </section>
 
@@ -40,7 +40,7 @@ export default function Model3D() {
           </a>
         </div>
         <div className="container-iframe">
-          <img src="/final-imgs/car.jpg" alt="a 3d car" />
+          <img src={import.meta.env.BASE_URL + "final-imgs/car.jpg"} alt="a 3d car" />
         </div>
       </section>
     </>

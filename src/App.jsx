@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -11,6 +12,13 @@ import WebProjects from "./pages/WebProjects.jsx";
 
 export default function App() {
   const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
   const showGlobalNav = location.pathname !== "/"; // hide on Home
 
   return (

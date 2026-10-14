@@ -15,7 +15,7 @@ export default function Illustration() {
         </div>
         <div className="container-iframe">
           <img
-            src="/final-imgs/Feminimity.JPG"
+            src={import.meta.env.BASE_URL + "final-imgs/Feminimity.JPG"}
             alt="a girl taking off her blindfold and reaching for a pomegranate."
           />
         </div>
@@ -41,13 +41,13 @@ export default function Illustration() {
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="/final-imgs/nidihoc/nina-vo-1.jpg" className="d-block w-100" alt="Nidihoc title art" />
+                <img src={import.meta.env.BASE_URL + "final-imgs/nidihoc/nina-vo-1.jpg"} className="d-block w-100" alt="Nidihoc title art" />
               </div>
               <div className="carousel-item">
-                <img src="/final-imgs/nidihoc/nina-vo-6.jpg" className="d-block w-100" alt="Character design" />
+                <img src={import.meta.env.BASE_URL + "final-imgs/nidihoc/nina-vo-6.jpg"} className="d-block w-100" alt="Character design" />
               </div>
               <div className="carousel-item">
-                <img src="/final-imgs/nidihoc/nina-vo-8.jpg" className="d-block w-100" alt="Character in street" />
+                <img src={import.meta.env.BASE_URL + "final-imgs/nidihoc/nina-vo-8.jpg"} className="d-block w-100" alt="Character in street" />
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -73,7 +73,7 @@ export default function Illustration() {
           </a>
         </div>
         <div className="container-iframe">
-          <img src="/final-imgs/unblended.jpg" alt="ear, eye, and nose of marble statue." />
+          <img src={import.meta.env.BASE_URL + "final-imgs/unblended.jpg"} alt="ear, eye, and nose of marble statue." />
         </div>
       </section>
     </>

@@ -33,9 +33,9 @@ export default function NavBar() {
               </NavLink>
             </li>
 
-            {/* About is an anchor on Home; we link to /#about */}
+            {/* Navigate home and scroll to the About section. */}
             <li className="nav-item">
-              <a className="nav-link" href="/#about">About</a>
+              <Link className="nav-link" to="/#about">About</Link>
             </li>
 
             <li className="nav-item">

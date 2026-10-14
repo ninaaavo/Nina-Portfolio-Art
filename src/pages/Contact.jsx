@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Contact() {
   return (
     <>
@@ -16,7 +18,7 @@ export default function Contact() {
           <div className="content">+1 (781) 366 - 6991</div>
           <div className="tit">Website:</div>
           <div className="content">
-            <a href="/">Link here</a>
+            <Link to="/">Link here</Link>
           </div>
         </div>
       </section>

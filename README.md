@@ -1,12 +1,21 @@
-# React + Vite
+# Nina's art portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite portfolio for https://ninaaavo.github.io/Nina-Portfolio-Art/.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Use Node.js 22 or newer, then run `npm ci` and `npm run dev`.
 
-## Expanding the ESLint configuration
+## GitHub Pages deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+In the repository's **Settings ? Pages ? Build and deployment**, set **Source**
+to **GitHub Actions**. The workflow in `.github/workflows/deploy.yml` builds and
+deploys `dist/` on pushes to `main`; it can also be run from the Actions tab.
+Do not deploy the repository root: its `index.html` is a development entry point.
+
+`vite.config.js` sets the production base to `/Nina-Portfolio-Art/`. Media and
+document links use Vite's base URL. Hash routing supports opening and refreshing
+pages such as `/Nina-Portfolio-Art/#/animation` without a server rewrite.
+
+Run `npm run build` to check the production build, then `npm run preview` to
+preview it locally at `http://localhost:4173/Nina-Portfolio-Art/`.

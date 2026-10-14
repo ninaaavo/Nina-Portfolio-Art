@@ -5,10 +5,10 @@ export default function Footer() {
         <div className="links">
           
           <a href="https://github.com/ninaaavo">
-            <img src="/final-imgs/github-logo.svg" height="26em" alt="Github logo" />
+            <img src={import.meta.env.BASE_URL + "final-imgs/github-logo.svg"} height="26em" alt="Github logo" />
           </a>
           <a href="https://www.linkedin.com/in/nina-vo2/">
-            <img src="/final-imgs/linkedin-logo.svg" height="23em" alt="LinkedIn logo" />
+            <img src={import.meta.env.BASE_URL + "final-imgs/linkedin-logo.svg"} height="23em" alt="LinkedIn logo" />
           </a>
           <a href="mailto:baongocvo2007@gmail.com" aria-label="Email Nina">
             <svg fill="#FFF6E9" height="1.7em" viewBox="0 1 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +16,7 @@ export default function Footer() {
             </svg>
           </a>
           <a href="https://www.artstation.com/ngocvo1111">
-            <img src="/final-imgs/artStation-logo.png" height="22em" alt="Art Station logo" />
+            <img src={import.meta.env.BASE_URL + "final-imgs/artStation-logo.png"} height="22em" alt="Art Station logo" />
           </a>
         </div>
         <div className="cre">© ninavo</div>

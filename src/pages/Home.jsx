@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         <div className="ani">
           <video
             className="ani-img"
-            src="/final-imgs/animate.mp4"
+            src={import.meta.env.BASE_URL + "final-imgs/animate.mp4"}
             autoPlay
             muted
             loop
@@ -31,9 +32,9 @@ export default function Home() {
       {/* <section className="mid">
         <div className="a-box programmer">
           <p className="tit">SOFTWARE ENGINEER</p>
-          <a href="/web"><button type="button">My Software Projects</button></a>
+          <Link to="/web"><button type="button">My Software Projects</button></Link>
         </div>
-        <img src="/final-imgs/code.png" className="back" />
+        <img src={import.meta.env.BASE_URL + "final-imgs/code.png"} className="back" />
         <div className="opacity"></div>
       </section> */}
 
@@ -43,10 +44,10 @@ export default function Home() {
       <section className="mid">
         <div className="a-box">
           <p className="tit">ANIMATOR</p>
-          <a href="/animation"><button type="button">My Animations</button></a>
+          <Link to="/animation"><button type="button">My Animations</button></Link>
         </div>
         <video
-          src="/final-imgs/Demo Reel.mp4"
+          src={import.meta.env.BASE_URL + "final-imgs/Demo Reel.mp4"}
           className="back"
           autoPlay
           muted
@@ -62,9 +63,9 @@ export default function Home() {
       <section className="mid">
         <div className="a-box">
           <p className="tit">ILLUSTRATOR</p>
-          <a href="/illustration"><button type="button">My Illustrations</button></a>
+          <Link to="/illustration"><button type="button">My Illustrations</button></Link>
         </div>
-        <img src="/final-imgs/Feminimity.JPG" className="back" />
+        <img src={import.meta.env.BASE_URL + "final-imgs/Feminimity.JPG"} className="back" />
         <div className="opacity"></div>
       </section>
 
@@ -74,9 +75,9 @@ export default function Home() {
       <section className="mid">
         <div className="a-box">
           <p className="tit">3D MODELER</p>
-          <a href="/model"><button type="button">My 3D Models</button></a>
+          <Link to="/model"><button type="button">My 3D Models</button></Link>
         </div>
-        <img src="/final-imgs/robot.png" className="back" />
+        <img src={import.meta.env.BASE_URL + "final-imgs/robot.png"} className="back" />
         <div className="opacity"></div>
       </section>
 
@@ -94,7 +95,7 @@ export default function Home() {
           </p>
         </div>
         <div className="but">
-          <a href="/final-imgs/Nina Vo - Art Resume.pdf" target="_blank" rel="noreferrer">
+          <a href={import.meta.env.BASE_URL + "final-imgs/Nina Vo - Art Resume.pdf"} target="_blank" rel="noreferrer">
             <button type="button">Art Resume</button>
           </a>
           <br />
