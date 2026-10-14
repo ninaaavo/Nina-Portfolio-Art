@@ -28,14 +28,14 @@ export default function Home() {
 
 
       {/* Web Dev / Programmer */}
-      <section className="mid">
+      {/* <section className="mid">
         <div className="a-box programmer">
           <p className="tit">SOFTWARE ENGINEER</p>
           <a href="/web"><button type="button">My Software Projects</button></a>
         </div>
         <img src="/final-imgs/code.png" className="back" />
         <div className="opacity"></div>
-      </section>
+      </section> */}
 
       <div className="divider"></div>
 
@@ -87,9 +87,10 @@ export default function Home() {
         <div className="text">
           <p className="tit">Who's Nina?</p>
           <p className="para">
-            Nina Vo is an undergraduate student at the University of Massachusetts Amherst, majoring in Computer Science and Animation.
-            Passionate about both fields, she aspires to explore the intersection between them. Her days are filled with creative and technical
-            projects, ranging from animation and illustration to web development. She also crochet and knit as a big hobby!
+            Nina Vo is an animator known for her distinct painterly style, creating her films from concept to completion. Her practice spans 2D and 3D animation, as well as mixed media approaches that incorporate fiber art. Her films have been screened at the UMass Animation Festival and The Screen at SAB at the University of Massachusetts Amherst. In 2025, her work received the Best in Mixed Media award at the UMass Animation Festival.
+            <br />
+            <br />
+            Studying both animation and computer science at UMass Amherst, Nina explores the intersection of art and technology. Her love of knitting and crocheting also informs her practice, bringing tactile textures and handmade elements into her animations.
           </p>
         </div>
         <div className="but">
